@@ -6,6 +6,7 @@
 package Employee;
 
 import java.net.URL;
+import java.text.ParseException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -36,7 +37,7 @@ public class NewEmployeeFXMLController implements Initializable {
     }
     
     @FXML
-    private void submitNewEmployeeClick(ActionEvent event){
+    private void submitNewEmployeeClick(ActionEvent event) throws ParseException{
         Stage stage = (Stage) submitNewEmployeeButton.getScene().getWindow();
         String[] vars = new String[15];
         vars[0] = prefix.getSelectionModel().selectedItemProperty().toString();
@@ -58,6 +59,8 @@ public class NewEmployeeFXMLController implements Initializable {
     }
     /**
      * Initializes the controller class.
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {

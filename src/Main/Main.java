@@ -5,6 +5,7 @@
  */
 package Main;
 
+import Database.DBConnection;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -43,6 +44,7 @@ public class Main extends Application {
     }
 
     private double screenWidth() {
+        new DBConnection().connect();
         double width;
         Rectangle2D rectangle = Screen.getPrimary().getBounds();
         width = rectangle.getWidth();
