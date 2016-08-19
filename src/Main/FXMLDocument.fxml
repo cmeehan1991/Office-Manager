@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="Main.MainController" xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="10" vgap="10" >
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <Label text="Communications" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.halignment="CENTER" />
+    <Button fx:id="EmailButton" text="Email Center" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.halignment="CENTER" onAction="#handleEmailButton"/>
+    <Separator GridPane.columnIndex="0" GridPane.rowIndex="2" minWidth="100" />
+    <Label text="Work Orders" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.halignment="CENTER" />
+    <Button text="New Order" GridPane.columnIndex="0" GridPane.rowIndex="4"  GridPane.halignment="CENTER"/>
+    <Button text="Update/View" GridPane.columnIndex="0" GridPane.rowIndex="5"  GridPane.halignment="CENTER"/>
+    <Separator GridPane.columnIndex="0" GridPane.rowIndex="6" minWidth="100" />
+    <Label text="Employee Center" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.halignment="CENTER" />
+    <Button fx:id="NewEmployeeButton" onAction="#openNewEmployee" text="New Employee" GridPane.columnIndex="0" GridPane.rowIndex="8"  GridPane.halignment="CENTER"/>
+    <Button text="Update/View" GridPane.columnIndex="0" GridPane.rowIndex="9"  GridPane.halignment="CENTER"/>
+</GridPane>
+

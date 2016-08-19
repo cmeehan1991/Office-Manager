@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"  fx:controller="Email.NewEmailFXMLController" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets  top="25" right="25" bottom="10" left="25"/>
+    </padding>
+    <ButtonBar GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"  GridPane.halignment="LEFT">
+        <buttons>
+            <Button text="Send Email" fx:id="sendEmailButton" onAction="#sendEmail"/>
+            <Button text="Save Draft"/>
+        </buttons>
+    </ButtonBar>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="To:"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="toTextField"/>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="CC:"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="ccTextField"/>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="BCC:"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="bccTextField"/>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="4" text="Subject:"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="subjectTextField"/>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="5" text="Message" GridPane.valignment="TOP" />
+    <TextArea GridPane.columnIndex="1" GridPane.rowIndex="5" minHeight="400" minWidth="600" fx:id="messageTextArea"/> 
+</GridPane>

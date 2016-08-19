@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.label, .textfield, .combobox{
+    -fx-padding:5px;
+    -fx-font-size:12px;
+}
+
+.separator{
+    -fx-color:rgb(000,000,000);
+    -fx-padding:5px;
+}
