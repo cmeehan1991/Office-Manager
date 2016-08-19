@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
@@ -32,7 +33,9 @@ public class Main extends Application {
         stage.setY(10.00);
         stage.setX(screenWidth() - stage.getWidth() / 2);
         stage.setTitle("Office Manager");
+        stage.getIcons().add(new Image("Images/27900.png"));
         stage.setResizable(false);
+        stage.setFullScreen(false);
         stage.show();
         stage.setOnCloseRequest((WindowEvent e) -> {
             Platform.exit();

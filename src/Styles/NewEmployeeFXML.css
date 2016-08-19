@@ -11,3 +11,7 @@
     -fx-color:rgb(000,000,000);
     -fx-padding:5px;
 }
+
+.buttonbar{
+    -fx-padding: 10px;
+}
